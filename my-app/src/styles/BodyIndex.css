@@ -1,4 +1,86 @@
-img {
+header {
+  width: 95%;
+  margin: 4% auto 2% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 30%;
+}
+header a {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  margin-left: 26px;
+}
+
+@media (min-width: 1240px) {
+  header img {
+    max-width: 300px;
+  }
+  header a {
+    margin-left: 57px;
+    font-size: 24px;
+  }
+}
+.body-banner {
+  width: 95%;
+  margin: 4% auto 2% auto;
+}
+.body-banner div {
   height: 223px;
-  width: 1240px;
+  display: block;
+  max-height: 111px;
+  position: relative;
+}
+.body-banner div p {
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 2%;
+  color: white;
+  z-index: 2;
+  width: 54%;
+  min-width: 200px;
+  font-size: 24px;
+}
+.body-banner div img {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(50%) brightness(40%);
+  border-radius: 15px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+.body-banner ul {
+  margin: 0;
+  padding: 0%;
+}
+.body-banner li {
+  list-style-type: none;
+  position: relative;
+  padding: 0%;
+  width: 95%;
+  margin: 4% auto 2% auto;
+}
+.body-banner li img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.body-banner li p {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+@media (min-width: 1240px) {
+  .body-banner div {
+    max-height: 223px;
+  }
 }/*# sourceMappingURL=BodyIndex.css.map */
