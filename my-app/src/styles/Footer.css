@@ -1,0 +1,22 @@
+footer {
+  background-color: black;
+  height: 209px;
+  width: 100%;
+  position: relative;
+}
+footer img {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+footer p {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  width: 29%;
+}
+footer .p-Icon {
+  left: 35%;
+}/*# sourceMappingURL=Footer.css.map */

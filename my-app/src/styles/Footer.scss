@@ -1,0 +1,23 @@
+footer {
+  background-color: black;
+  height: 209px;
+  width: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+  }
+  p {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    width: 29%;
+  }
+  .p-Icon {
+    left: 35%;
+  }
+}
