@@ -2,6 +2,13 @@
   width: 95%;
   margin: 4% auto 2% auto;
 }
+@mixin middleDisplay{
+  margin: 20% auto; 
+  text-align: center; 
+  color:$primary_Color;
+}
+
+$primary_Color :#FF6060;
 
 header {
   @include setupDisplay;
