@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import "../styles/Banner.scss";
+import { Link } from "react-router-dom";
 
 function ImgLogo() {
   return <img src={logo} alt="logo"></img>;
@@ -7,8 +8,8 @@ function ImgLogo() {
 function Nav() {
   return (
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="apropos.html">A Propros</a>
+      <Link to="/">Accueil</Link>
+      <Link to="/apropos">A Propros</Link>
     </nav>
   );
 }
