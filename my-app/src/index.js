@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./styles/index.css";
-import App from "./components/App";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import APropos from "./pages/APropos";
+import "./styles/index.css";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Error404 from "./pages/404";
+import Estate from "./pages/Estate";
+import APropos from "./pages/APropos";
+import Home from "./pages/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,10 +15,18 @@ root.render(
     <Router>
       <Banner />
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
-        <Route path="/404" element={<Error404 />} />
+        <Route path="/estate/:id" element={<Estate />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
+  </React.StrictMode>
+);
+
+const footer = ReactDOM.createRoot(document.getElementById("footer"));
+footer.render(
+  <React.StrictMode>
+    <Footer />
   </React.StrictMode>
 );

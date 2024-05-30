@@ -27,4 +27,12 @@ header a {
 .btn {
   width: 95%;
   margin: 4% auto 2% auto;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+.btn p {
+  padding: 10px;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
 }/*# sourceMappingURL=Button.css.map */

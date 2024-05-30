@@ -1,5 +1,13 @@
 @use "Banner";
 
-.btn{
-    @include Banner.setupDisplay;
+.btn {
+  @include Banner.setupDisplay;
+  background-color: Banner.$primary_Color;
+  border-radius: 5px;
+  p {
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+  }
 }
