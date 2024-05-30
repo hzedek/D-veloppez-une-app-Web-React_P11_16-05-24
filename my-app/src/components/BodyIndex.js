@@ -1,12 +1,13 @@
-import DisplayBanner from "../assets/displayBanner.jpg";
+import ImgBanner from "../assets/displayBanner.jpg";
 import "../styles/BodyIndex.scss";
 import data from "../logements.json";
+import Display from "./BannerContainer";
 
-function Display() {
+function DisplayBanner() {
   const Titre = "Chez vous, Partout et ailleurs";
   return (
     <div>
-      <img src={DisplayBanner} alt="bannière" />
+      <Display image={ImgBanner} />
       <p>{Titre}</p>
     </div>
   );
@@ -26,7 +27,7 @@ function CardLocation() {
 function BodyIndex() {
   return (
     <div className="body-banner">
-      <Display />
+      <DisplayBanner />
       <CardLocation />
     </div>
   );

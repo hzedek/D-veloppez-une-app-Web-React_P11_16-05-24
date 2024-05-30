@@ -1,0 +1,5 @@
+@use "Banner";
+
+.btn{
+    @include Banner.setupDisplay;
+}

@@ -1,0 +1,44 @@
+header {
+  width: 95%;
+  margin: 4% auto 2% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 30%;
+}
+header a {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  margin-left: 26px;
+}
+
+@media (min-width: 1240px) {
+  header img {
+    max-width: 300px;
+  }
+  header a {
+    margin-left: 57px;
+    font-size: 24px;
+  }
+}
+.Div_ImgContainer {
+  width: 95%;
+  margin: 4% auto 2% auto;
+  height: 223px;
+  display: block;
+  max-height: 111px;
+  position: relative;
+}
+.Div_ImgContainer img {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(20%) brightness(80%);
+  border-radius: 15px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=BannerContainer.css.map */

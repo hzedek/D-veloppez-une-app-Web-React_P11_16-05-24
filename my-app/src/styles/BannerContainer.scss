@@ -1,0 +1,19 @@
+@use "Banner";
+
+.Div_ImgContainer {
+  @include Banner.setupDisplay;
+
+  height: 223px;
+  display: block;
+  max-height: 111px;
+  position: relative;
+  img {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(20%) brightness(80%);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  }
+}
