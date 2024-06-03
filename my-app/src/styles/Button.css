@@ -30,10 +30,25 @@ header a {
   background-color: #FF6060;
   border-radius: 5px;
   margin: 30px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.btn p {
-  padding: 10px;
+.btn .btn_p {
+  padding-left: 10px;
   font-size: 13px;
   color: white;
   font-weight: bold;
+}
+.btn .fa-chevron-up,
+.btn .fa-chevron-down {
+  padding-right: 10px;
+  transition: transform 0.3s;
+  color: white;
+}
+.btn .fa-chevron-up {
+  transform: rotate(0deg);
+}
+.btn .fa-chevron-down {
+  transform: rotate(0deg);
 }/*# sourceMappingURL=Button.css.map */

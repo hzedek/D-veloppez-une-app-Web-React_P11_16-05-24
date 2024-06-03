@@ -27,25 +27,55 @@ header a {
 .EstateContainer {
   width: 90%;
   margin: 4% auto 2% auto;
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
 .EstateContainer .btn {
   width: 100%;
-  margin-bottom: -10px;
-}
-.EstateContainer img {
-  width: 100%;
-  border-radius: 10px;
 }
 .EstateContainer h2 {
   color: #FF6060;
   font-weight: 400;
 }
+.EstateContainer .carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.EstateContainer .carousel__image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  height: 255px;
+}
+.EstateContainer .carousel__chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.EstateContainer .carousel__chevron--left {
+  left: 10px;
+}
+.EstateContainer .carousel__chevron--right {
+  right: 10px;
+}
+.EstateContainer .carousel__chevron:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .EstateContainer .ul_tags {
   display: flex;
   padding: 0%;
+  align-items: center;
 }
 .EstateContainer .ul_tags li {
-  padding: 5px;
+  padding: 2%;
   width: 84px;
   font-size: 10px;
   background-color: #FF6060;
@@ -56,9 +86,11 @@ header a {
   font-weight: bold;
   margin-right: 10px;
 }
-.EstateContainer .ul_equipements {
+
+.ul_equipements {
   list-style: none;
-  padding: 5px 0%;
+  padding: 10px 0%;
   background-color: rgba(246, 246, 246, 0.4509803922);
-  margin-top: 0%;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }/*# sourceMappingURL=estate.css.map */

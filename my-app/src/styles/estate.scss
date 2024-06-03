@@ -2,23 +2,59 @@
 
 .EstateContainer {
   @include Banner.setupDisplay;
+  margin-bottom: 50px;
+  margin-top: 40px;
   .btn {
     width: 100%;
-    margin-bottom: -10px;
-  }
-  img {
-    width: 100%;
-    border-radius: 10px;
   }
   h2 {
     color: Banner.$primary_Color;
     font-weight: 400;
   }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel__image {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    height: 255px;
+  }
+
+  .carousel__chevron {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .carousel__chevron--left {
+    left: 10px;
+  }
+
+  .carousel__chevron--right {
+    right: 10px;
+  }
+
+  .carousel__chevron:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
   .ul_tags {
     display: flex;
     padding: 0%;
+    align-items: center;
     li {
-      padding: 5px;
+      padding: 2%;
       width: 84px;
       font-size: 10px;
       background-color: Banner.$primary_Color;
@@ -30,11 +66,12 @@
       margin-right: 10px;
     }
   }
-  .ul_equipements{
-    list-style: none;
-    padding: 5px 0%;
-    background-color: #F6F6F673;
-    margin-top: 0%;
-    
-  }
+}
+
+.ul_equipements {
+  list-style: none;
+  padding: 10px 0%;
+  background-color: #f6f6f673;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
