@@ -4,6 +4,7 @@
   @include Banner.setupDisplay;
   background-color: Banner.$primary_Color;
   border-radius: 5px;
+  margin: 30px auto 0px auto;
   p {
     padding: 10px;
     font-size: 13px;

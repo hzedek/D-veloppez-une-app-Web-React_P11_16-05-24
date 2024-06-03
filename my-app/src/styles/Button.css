@@ -1,5 +1,5 @@
 header {
-  width: 95%;
+  width: 90%;
   margin: 4% auto 2% auto;
   display: flex;
   align-items: center;
@@ -25,10 +25,11 @@ header a {
   }
 }
 .btn {
-  width: 95%;
+  width: 90%;
   margin: 4% auto 2% auto;
   background-color: #FF6060;
   border-radius: 5px;
+  margin: 30px auto 0px auto;
 }
 .btn p {
   padding: 10px;

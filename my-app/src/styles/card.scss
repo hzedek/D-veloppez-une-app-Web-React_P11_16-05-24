@@ -1,0 +1,28 @@
+@use "Banner";
+
+.ul_card {
+  margin: 0;
+  padding: 0%;
+  li {
+    height: 255px;
+    list-style-type: none;
+    position: relative;
+    padding: 0%;
+    @include Banner.setupDisplay;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    p {
+      position: absolute;
+      bottom: 0%;
+      left: 03%;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}

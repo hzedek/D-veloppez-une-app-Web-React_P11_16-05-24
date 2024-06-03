@@ -1,0 +1,40 @@
+@use "Banner";
+
+.EstateContainer {
+  @include Banner.setupDisplay;
+  .btn {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  h2 {
+    color: Banner.$primary_Color;
+    font-weight: 400;
+  }
+  .ul_tags {
+    display: flex;
+    padding: 0%;
+    li {
+      padding: 5px;
+      width: 84px;
+      font-size: 10px;
+      background-color: Banner.$primary_Color;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      list-style-type: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+  .ul_equipements{
+    list-style: none;
+    padding: 5px 0%;
+    background-color: #F6F6F673;
+    margin-top: 0%;
+    
+  }
+}

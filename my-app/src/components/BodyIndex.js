@@ -6,7 +6,7 @@ import Card from "./Card";
 function DisplayBanner() {
   const Titre = "Chez vous, Partout et ailleurs";
   return (
-    <div>
+    <div className="div_bodyIndex">
       <Display image={ImgBanner} />
       <p>{Titre}</p>
     </div>

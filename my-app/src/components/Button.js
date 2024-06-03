@@ -1,7 +1,7 @@
 import "../styles/Button.scss"
 
-function Btn({text}) {
-    return <div className="btn"><p>{text}</p></div>
+function Btn({text, onClick }) {
+    return <div className="btn" onClick={onClick}><p>{text}</p></div>
 }
 
 export default Btn
