@@ -2,8 +2,8 @@
 
 .EstateContainer {
   @include Banner.setupDisplay;
-  margin-bottom: 50px;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
   .btn {
     width: 100%;
   }
@@ -66,12 +66,39 @@
       margin-right: 10px;
     }
   }
-}
-
-.ul_equipements {
-  list-style: none;
-  padding: 10px 0%;
-  background-color: #f6f6f673;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  .div_faStar_host_responsive{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    .div_host{
+      display: flex;
+      align-items: center;
+    p{
+      color: Banner.$primary_Color;
+      width: 93px;
+      text-align: right;
+      margin:10px 5px;
+    }
+    img{
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  }
+  .div_faStar{
+    margin:10px 0px;
+    color: #E3E3E3;
+    .faStarRed{
+      color: Banner.$primary_Color;
+    }
+  }
+  .ul_equipements {
+    list-style: none;
+    padding: 10px 0%;
+    background-color: #f6f6f673;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }  
 }

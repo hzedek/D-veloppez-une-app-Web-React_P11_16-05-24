@@ -5,7 +5,10 @@ import { useParams } from "react-router-dom";
 import data from "../logements.json";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight
+import {
+  faChevronLeft,
+  faChevronRight,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 
 function findById(id) {
@@ -60,20 +63,49 @@ function EstateCard() {
           <li key={`${tag}-${index}`}>{tag}</li>
         ))}
       </ul>
+      <div className="div_faStar_host_responsive">
+        <div className="div_faStar">
+          <FontAwesomeIcon
+            icon={faStar}
+            className={object.rating > 0 ? "faStarRed" : ""}
+          />
+          <FontAwesomeIcon
+            icon={faStar}
+            className={object.rating > 1 ? "faStarRed" : ""}
+          />
+          <FontAwesomeIcon
+            icon={faStar}
+            className={object.rating > 2 ? "faStarRed" : ""}
+          />
+          <FontAwesomeIcon
+            icon={faStar}
+            className={object.rating > 3 ? "faStarRed" : ""}
+          />
+          <FontAwesomeIcon
+            icon={faStar}
+            className={object.rating > 4 ? "faStarRed" : ""}
+          />
+        </div>
+        <div className="div_host">
+        <p>{object.host.name}</p>
+        <img src={object.host.picture} alt="profil de l'host"></img>
+      </div>
+      </div>
       <Button
         text={Description}
         div={<p className="ul_equipements">{object.description}</p>}
       />
-      
+
       <Button
         text={Équipements}
-        div={<ul className="ul_equipements">
-        {object.equipments.map((equipment, index) => (
-          <li key={`${equipment}-${index}`}>{equipment}</li>
-        ))}
-      </ul>}
+        div={
+          <ul className="ul_equipements">
+            {object.equipments.map((equipment, index) => (
+              <li key={`${equipment}-${index}`}>{equipment}</li>
+            ))}
+          </ul>
+        }
       />
-      
     </div>
   );
 }

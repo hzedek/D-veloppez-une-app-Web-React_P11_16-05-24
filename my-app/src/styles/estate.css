@@ -27,8 +27,8 @@ header a {
 .EstateContainer {
   width: 90%;
   margin: 4% auto 2% auto;
-  margin-bottom: 50px;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 .EstateContainer .btn {
   width: 100%;
@@ -86,8 +86,35 @@ header a {
   font-weight: bold;
   margin-right: 10px;
 }
-
-.ul_equipements {
+.EstateContainer .div_faStar_host_responsive {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.EstateContainer .div_faStar_host_responsive .div_host {
+  display: flex;
+  align-items: center;
+}
+.EstateContainer .div_faStar_host_responsive .div_host p {
+  color: #FF6060;
+  width: 93px;
+  text-align: right;
+  margin: 10px 5px;
+}
+.EstateContainer .div_faStar_host_responsive .div_host img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.EstateContainer .div_faStar {
+  margin: 10px 0px;
+  color: #E3E3E3;
+}
+.EstateContainer .div_faStar .faStarRed {
+  color: #FF6060;
+}
+.EstateContainer .ul_equipements {
   list-style: none;
   padding: 10px 0%;
   background-color: rgba(246, 246, 246, 0.4509803922);
