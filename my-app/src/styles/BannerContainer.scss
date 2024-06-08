@@ -15,10 +15,28 @@
     border-radius: 15px;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   }
+  .p_Banner_titre{
+      font-weight: bold;
+      position: absolute;
+      left: 10%;
+      top: 0%;
+      color: white;
+      z-index: 2;
+      width: 54%;
+      min-width: 200px;
+      font-size: 24px;
+    }
 }
 
-@media (min-width: 1000px) {
+@media (min-width:810px) {
   .Div_ImgContainer{
     height: 223px;
+    .p_Banner_titre{
+      width: 100%;
+      font-size: 3em;
+      text-align: center;
+      top: 30px;
+      left: 0;
+    }
   }
 }

@@ -7,8 +7,7 @@ function DisplayBanner() {
   const Titre = "Chez vous, Partout et ailleurs";
   return (
     <div className="div_bodyIndex">
-      <Display image={ImgBanner} />
-      <p className="p_Banner_titre" id="p" >{Titre}</p>
+      <Display image={ImgBanner} titre={Titre} />
     </div>
   );
 }

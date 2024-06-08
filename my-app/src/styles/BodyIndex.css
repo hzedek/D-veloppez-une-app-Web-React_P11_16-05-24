@@ -37,17 +37,6 @@ header a {
   max-height: 111px;
   position: relative;
 }
-.body-banner .div_bodyIndex .p_Banner_titre {
-  font-weight: bold;
-  position: absolute;
-  left: 10%;
-  top: 0%;
-  color: white;
-  z-index: 2;
-  width: 54%;
-  min-width: 200px;
-  font-size: 24px;
-}
 .body-banner .div_bodyIndex img {
   z-index: 1;
   height: 100%;
@@ -60,12 +49,6 @@ header a {
 }
 
 @media (min-width: 1000px) {
-  .div_bodyIndex #p {
-    width: 100%;
-    font-size: 3em;
-    left: 26%;
-    top: 30px;
-  }
   .div_bodyIndex .Div_ImgContainer {
     max-height: 223px;
   }

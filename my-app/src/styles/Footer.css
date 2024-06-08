@@ -2,21 +2,27 @@ footer {
   background-color: black;
   height: 209px;
   width: 100%;
-  position: relative;
 }
-footer img {
-  position: absolute;
-  top: 30%;
-  left: 35%;
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10%;
+  align-items: center;
 }
-footer p {
+footer div img {
+  width: 122px;
+}
+footer div p {
+  text-align: center;
   color: white;
   font-size: 12px;
-  position: absolute;
-  top: 50%;
-  left: 39%;
-  width: 29%;
+  width: 130px;
 }
-footer .p-Icon {
-  left: 35%;
+@media (min-width: 500px) {
+  footer div p {
+    font-size: 24px;
+    width: 100%;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

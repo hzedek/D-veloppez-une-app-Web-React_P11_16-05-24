@@ -57,9 +57,9 @@ header a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 140px;
     background-color: #F6F6F6;
     border-radius: 15px;
+    margin-top: 15%;
   }
   .ul_card li {
     width: 340px;
