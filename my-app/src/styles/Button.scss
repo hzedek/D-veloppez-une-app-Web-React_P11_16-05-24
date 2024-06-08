@@ -31,16 +31,25 @@
   }
 }
 
+.btn_text {
+  background-color: #f6f6f673;
+  margin-bottom: 20px;
+  width: 90%;
+  margin: 10px auto 40px auto;
+}
+
 // AproposPageBtn
 @media (min-width: 1140px) {
   .div_Apropos_container {
-    .btn{
+    .btn_text {
       width: 1023px;
-      height:52px ;
-      p{
+    }
+    .btn {
+      width: 1023px;
+      height: 52px;
+      p {
         font-size: 24px;
       }
     }
-
   }
 }

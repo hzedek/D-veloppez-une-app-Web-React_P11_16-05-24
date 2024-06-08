@@ -11,10 +11,10 @@ function APropos() {
   return (
     <div className="div_Apropos_container">
       <Display image={AProposImgBanner} />
-      <Btn text={Fiabilité} />
-      <Btn text={Respect} />
-      <Btn text={Service} />
-      <Btn text={Sécurité} />
+      <Btn text={Fiabilité} div={<p className="btn_text">Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux Logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>} />
+      <Btn text={Respect} div={<p className="btn_text">Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux Logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>} />
+      <Btn text={Service} div={<p className="btn_text">Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux Logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>} />
+      <Btn text={Sécurité} div={<p className="btn_text">Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux Logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>} />
     </div>
   );
 }
