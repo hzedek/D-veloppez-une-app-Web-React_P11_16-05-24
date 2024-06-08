@@ -86,30 +86,30 @@ header a {
   font-weight: bold;
   margin-right: 10px;
 }
-.EstateContainer .div_faStar_host_responsive {
+.EstateContainer .aside_faStar_host_responsive {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
-.EstateContainer .div_faStar_host_responsive .div_host {
+.EstateContainer .aside_faStar_host_responsive .div_host {
   display: flex;
   align-items: center;
 }
-.EstateContainer .div_faStar_host_responsive .div_host p {
+.EstateContainer .aside_faStar_host_responsive .div_host p {
   color: #FF6060;
   width: 93px;
   text-align: right;
   margin: 10px 5px;
 }
-.EstateContainer .div_faStar_host_responsive .div_host img {
+.EstateContainer .aside_faStar_host_responsive .div_host img {
   border-radius: 50%;
   width: 32px;
   height: 32px;
 }
 .EstateContainer .div_faStar {
   margin: 10px 0px;
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 .EstateContainer .div_faStar .faStarRed {
   color: #FF6060;
@@ -120,4 +120,53 @@ header a {
   background-color: rgba(246, 246, 246, 0.4509803922);
   margin-bottom: 20px;
   margin-top: 0px;
+}
+
+@media (min-width: 1000px) {
+  .EstateContainer .carousel__image {
+    height: 415px;
+  }
+  .EstateContainer .div_responsive {
+    display: flex;
+    width: 100%;
+    height: 170px;
+    justify-content: space-between;
+  }
+  .EstateContainer .div_responsive .ul_tags li {
+    padding: 5px 5px;
+  }
+  .EstateContainer .div_responsive .aside_faStar_host_responsive {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: end;
+    width: 20%;
+    padding-bottom: 28px;
+  }
+  .EstateContainer .div_responsive .aside_faStar_host_responsive .div_host {
+    width: 167px;
+    justify-content: end;
+  }
+  .EstateContainer .div_responsive .aside_faStar_host_responsive .div_host p {
+    font-size: 18px;
+    width: 90px;
+    padding-right: 6px;
+  }
+  .EstateContainer .div_responsive .aside_faStar_host_responsive .div_host img {
+    width: 64px;
+    height: 64px;
+  }
+  .EstateContainer .div_responsive .aside_faStar_host_responsive .div_faStar .fa-star {
+    margin-right: 10px;
+  }
+  .EstateContainer .btn_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .EstateContainer .btn_flex div {
+    width: 48%;
+  }
+  .EstateContainer .btn_flex div .btn {
+    width: 100%;
+  }
 }/*# sourceMappingURL=estate.css.map */

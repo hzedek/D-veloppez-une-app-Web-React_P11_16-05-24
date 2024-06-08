@@ -66,31 +66,31 @@
       margin-right: 10px;
     }
   }
-  .div_faStar_host_responsive{
+  .aside_faStar_host_responsive {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    .div_host{
+    .div_host {
       display: flex;
       align-items: center;
-    p{
-      color: Banner.$primary_Color;
-      width: 93px;
-      text-align: right;
-      margin:10px 5px;
-    }
-    img{
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
+      p {
+        color: Banner.$primary_Color;
+        width: 93px;
+        text-align: right;
+        margin: 10px 5px;
+      }
+      img {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+      }
     }
   }
-  }
-  .div_faStar{
-    margin:10px 0px;
-    color: #E3E3E3;
-    .faStarRed{
+  .div_faStar {
+    margin: 10px 0px;
+    color: #e3e3e3;
+    .faStarRed {
       color: Banner.$primary_Color;
     }
   }
@@ -100,5 +100,61 @@
     background-color: #f6f6f673;
     margin-bottom: 20px;
     margin-top: 0px;
-  }  
+  }
+}
+
+@media (min-width: 1000px) {
+  .EstateContainer {
+    .carousel__image {
+      height: 415px;
+    }
+    .div_responsive {
+      display: flex;
+      width: 100%;
+      height: 170px;
+      justify-content: space-between;
+      .ul_tags {
+        li {
+          padding: 5px 5px;
+        }
+      }
+      .aside_faStar_host_responsive {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: end;
+        width: 20%;
+        padding-bottom: 28px;
+        .div_host {
+          width: 167px;
+          justify-content: end;
+          p {
+            font-size: 18px;
+            width: 90px;
+            padding-right: 6px;
+          }
+          img {
+            width: 64px;
+            height: 64px;
+          }
+        }
+        .div_faStar {
+          .fa-star {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .btn_flex {
+      display: flex;
+      justify-content: space-between;
+      div {
+        width: 48%;
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

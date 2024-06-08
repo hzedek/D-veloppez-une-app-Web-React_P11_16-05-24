@@ -56,56 +56,63 @@ function EstateCard() {
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
-      <h2>{object.title}</h2>
-      <p>{object.location}</p>
-      <ul className="ul_tags">
-        {object.tags.map((tag, index) => (
-          <li key={`${tag}-${index}`}>{tag}</li>
-        ))}
-      </ul>
-      <div className="div_faStar_host_responsive">
-        <div className="div_faStar">
-          <FontAwesomeIcon
-            icon={faStar}
-            className={object.rating > 0 ? "faStarRed" : ""}
-          />
-          <FontAwesomeIcon
-            icon={faStar}
-            className={object.rating > 1 ? "faStarRed" : ""}
-          />
-          <FontAwesomeIcon
-            icon={faStar}
-            className={object.rating > 2 ? "faStarRed" : ""}
-          />
-          <FontAwesomeIcon
-            icon={faStar}
-            className={object.rating > 3 ? "faStarRed" : ""}
-          />
-          <FontAwesomeIcon
-            icon={faStar}
-            className={object.rating > 4 ? "faStarRed" : ""}
-          />
-        </div>
-        <div className="div_host">
-        <p>{object.host.name}</p>
-        <img src={object.host.picture} alt="profil de l'host"></img>
-      </div>
-      </div>
-      <Button
-        text={Description}
-        div={<p className="ul_equipements">{object.description}</p>}
-      />
-
-      <Button
-        text={Équipements}
-        div={
-          <ul className="ul_equipements">
-            {object.equipments.map((equipment, index) => (
-              <li key={`${equipment}-${index}`}>{equipment}</li>
+      <div className="div_responsive">
+        <aside className="aside_left">
+          <h2>{object.title}</h2>
+          <p>{object.location}</p>
+          <ul className="ul_tags">
+            {object.tags.map((tag, index) => (
+              <li key={`${tag}-${index}`}>{tag}</li>
             ))}
           </ul>
-        }
-      />
+        </aside>
+
+        <aside className="aside_faStar_host_responsive">
+          <div className="div_faStar">
+            <FontAwesomeIcon
+              icon={faStar}
+              className={object.rating > 0 ? "faStarRed" : ""}
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              className={object.rating > 1 ? "faStarRed" : ""}
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              className={object.rating > 2 ? "faStarRed" : ""}
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              className={object.rating > 3 ? "faStarRed" : ""}
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              className={object.rating > 4 ? "faStarRed" : ""}
+            />
+          </div>
+          <div className="div_host">
+            <p>{object.host.name}</p>
+            <img src={object.host.picture} alt="profil de l'host"></img>
+          </div>
+        </aside>
+      </div>
+      <div className="btn_flex">
+        <Button
+          text={Description}
+          div={<p className="ul_equipements">{object.description}</p>}
+        />
+
+        <Button
+          text={Équipements}
+          div={
+            <ul className="ul_equipements">
+              {object.equipments.map((equipment, index) => (
+                <li key={`${equipment}-${index}`}>{equipment}</li>
+              ))}
+            </ul>
+          }
+        />
+      </div>
     </div>
   );
 }
