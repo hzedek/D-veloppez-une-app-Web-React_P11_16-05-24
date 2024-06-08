@@ -8,7 +8,7 @@ function DisplayBanner() {
   return (
     <div className="div_bodyIndex">
       <Display image={ImgBanner} />
-      <p>{Titre}</p>
+      <p className="p_Banner_titre" id="p" >{Titre}</p>
     </div>
   );
 }

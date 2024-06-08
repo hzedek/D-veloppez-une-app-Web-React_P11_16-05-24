@@ -50,4 +50,19 @@ header a {
   font-size: 18px;
   color: white;
   font-weight: bold;
+}
+
+@media (min-width: 810px) {
+  .ul_card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 140px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+  }
+  .ul_card li {
+    width: 340px;
+    height: 340px;
+  }
 }/*# sourceMappingURL=card.css.map */

@@ -2,12 +2,15 @@
 
 .body-banner {
   @include Banner.setupDisplay;
+  .Div_ImgContainer {
+    width: 100%;
+  }
   .div_bodyIndex {
-    height: 223px;
+    height: 100%;
     display: block;
     max-height: 111px;
     position: relative;
-    p {
+    .p_Banner_titre{
       font-weight: bold;
       position: absolute;
       left: 10%;
@@ -31,10 +34,17 @@
   
 }
 
-@media (min-width: 1240px) {
-  .body-banner {
-    div {
-      max-height: 223px;
+@media (min-width: 1000px) {
+    .div_bodyIndex {
+      #p{
+        width: 100%;
+        font-size: 3em;
+        left: 26%;
+        top: 30px;
+      }
+      .Div_ImgContainer{
+        max-height: 223px;
+      }
     }
   }
-}
+

@@ -2,10 +2,8 @@
 
 .Div_ImgContainer {
   @include Banner.setupDisplay;
-
-  height: 223px;
+  height: 111px;
   display: block;
-  max-height: 111px;
   position: relative;
   margin-bottom: 30px;
   img {
@@ -16,5 +14,11 @@
     filter: grayscale(20%) brightness(80%);
     border-radius: 15px;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 1000px) {
+  .Div_ImgContainer{
+    height: 223px;
   }
 }

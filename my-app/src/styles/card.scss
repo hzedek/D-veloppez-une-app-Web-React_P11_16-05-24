@@ -26,3 +26,19 @@
     }
   }
 }
+
+@media (min-width: 810px) {
+  .ul_card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 140px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+
+    li {
+      width: 340px;
+      height: 340px;
+    }
+  }
+}
