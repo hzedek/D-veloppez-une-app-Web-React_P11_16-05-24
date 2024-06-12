@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   .btn_p {
     padding-left: 10px;
     font-size: 13px;
@@ -18,7 +17,7 @@
   .fa-chevron-up,
   .fa-chevron-down {
     padding-right: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.8s;
     color: white;
   }
 
@@ -31,12 +30,24 @@
   }
 }
 
-.btn_text {
-  background-color: #f6f6f673;
-  margin-bottom: 20px;
-  width: 90%;
-  margin: 10px auto 40px auto;
+
+.btn_animation {
+  overflow: hidden;
+  transition: height 0.9s ease;
+  .btn_text {
+    background-color: #f6f6f673;
+    margin-bottom: 20px;
+    margin: 10px auto 40px auto;
+  }
 }
+.div_Apropos_container {
+  .btn_text {
+    width: 90%;
+  }
+}
+
+
+
 
 // AproposPageBtn
 @media (min-width: 1140px) {

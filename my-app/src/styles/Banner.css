@@ -24,4 +24,27 @@ header a {
     margin-left: 57px;
     font-size: 24px;
   }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 10px;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+}
+
+.nav-link.active::after {
+  width: 100%;
 }/*# sourceMappingURL=Banner.css.map */

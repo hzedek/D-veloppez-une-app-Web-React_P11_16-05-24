@@ -26,6 +26,29 @@ header a {
   }
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 10px;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
 .btn {
   width: 90%;
   margin: 4% auto 2% auto;
@@ -45,7 +68,7 @@ header a {
 .btn .fa-chevron-up,
 .btn .fa-chevron-down {
   padding-right: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.8s;
   color: white;
 }
 .btn .fa-chevron-up {
@@ -55,11 +78,18 @@ header a {
   transform: rotate(0deg);
 }
 
-.btn_text {
+.btn_animation {
+  overflow: hidden;
+  transition: height 0.9s ease;
+}
+.btn_animation .btn_text {
   background-color: rgba(246, 246, 246, 0.4509803922);
   margin-bottom: 20px;
-  width: 90%;
   margin: 10px auto 40px auto;
+}
+
+.div_Apropos_container .btn_text {
+  width: 90%;
 }
 
 @media (min-width: 1140px) {

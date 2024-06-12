@@ -2,12 +2,13 @@ footer {
   background-color: black;
   height: 209px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer div {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding-top: 10%;
   align-items: center;
 }
 footer div img {
@@ -20,6 +21,10 @@ footer div p {
   width: 130px;
 }
 @media (min-width: 500px) {
+  footer {
+    height: 300px;
+    padding: 20% auto;
+  }
   footer div p {
     font-size: 24px;
     width: 100%;

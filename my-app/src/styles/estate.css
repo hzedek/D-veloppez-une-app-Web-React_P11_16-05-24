@@ -26,6 +26,29 @@ header a {
   }
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 10px;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
 .EstateContainer {
   width: 90%;
   margin: 4% auto 2% auto;
@@ -116,12 +139,13 @@ header a {
 .EstateContainer .div_faStar .faStarRed {
   color: #FF6060;
 }
-.EstateContainer .ul_equipements {
+.EstateContainer .btn_hidden_text {
   list-style: none;
   padding: 10px 0%;
   background-color: rgba(246, 246, 246, 0.4509803922);
   margin-bottom: 20px;
   margin-top: 0px;
+  width: 100%;
 }
 
 @media (min-width: 1000px) {

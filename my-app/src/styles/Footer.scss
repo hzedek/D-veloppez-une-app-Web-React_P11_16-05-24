@@ -2,25 +2,36 @@ footer {
   background-color: black;
   height: 209px;
   width: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 
   div {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-top: 10%;
     align-items: center;
+
     img {
       width: 122px;
     }
+
     p {
       text-align: center;
       color: white;
       font-size: 12px;
       width: 130px;
-      @media (min-width: 500px) {
-      font-size: 24px;
-      width: 100%;
-      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    height: 300px;
+    padding: 20% auto;
+
+    div {
+      p {
+        font-size: 24px;
+        width: 100%;
+        margin-top: 30px;
       }
     }
   }

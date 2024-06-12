@@ -99,13 +99,13 @@ function EstateCard() {
       <div className="btn_flex">
         <Button
           text={Description}
-          div={<p className="ul_equipements">{object.description}</p>}
+          div={<p className="btn_hidden_text">{object.description}</p>}
         />
 
         <Button
           text={Équipements}
           div={
-            <ul className="ul_equipements">
+            <ul className="btn_hidden_text">
               {object.equipments.map((equipment, index) => (
                 <li key={`${equipment}-${index}`}>{equipment}</li>
               ))}
