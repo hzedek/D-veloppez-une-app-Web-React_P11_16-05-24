@@ -13,26 +13,6 @@ header img {
     max-width: 300px;
   }
 }
-header .nav-link {
-  text-decoration: none;
-  color: black;
-  position: relative;
-  padding: 10px;
-}
-header .nav-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-header .nav-link.active::after {
-  width: 100%;
-}
 header a {
   font-size: 12px;
   color: black;
@@ -44,6 +24,29 @@ header a {
     margin-left: 57px;
     font-size: 24px;
   }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 10px;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+}
+
+.nav-link.active::after {
+  width: 100%;
 }
 
 .body-banner {

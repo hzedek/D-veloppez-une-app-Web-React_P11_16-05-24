@@ -25,13 +25,13 @@ function EstateCard() {
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => {
-      return prevIndex < imgEstate.length - 1 ? prevIndex + 1 : prevIndex;
+      return prevIndex < imgEstate.length - 1 ? prevIndex + 1 : 0;
     });
   };
 
   const prevImage = () => {
     setCurrentIndex((prevIndex) => {
-      return prevIndex > 0 ? prevIndex - 1 : prevIndex;
+      return prevIndex > 0 ? prevIndex - 1 : imgEstate.length - 1;
     });
   };
 

@@ -16,7 +16,7 @@ function Nav() {
   );
 }
 
-function Banner() {
+function Header() {
   return (
     <header>
       <ImgLogo />
@@ -24,4 +24,4 @@ function Banner() {
     </header>
   );
 }
-export default Banner;
+export default Header;
